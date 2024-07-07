@@ -1,1 +1,1 @@
-git clone https://github.com/louislam/uptime-kuma && cd uptime-kuma && sudo docker-compose up -d
+sudo docker run -d --restart=always -p 127.0.0.1:3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
